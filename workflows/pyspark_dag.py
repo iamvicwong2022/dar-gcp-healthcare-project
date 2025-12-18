@@ -10,9 +10,9 @@ from airflow.providers.google.cloud.operators.dataproc import (
 )
 
 # define the variables
-PROJECT_ID = "avd-databricks-demo"
+PROJECT_ID = "healthcare-dataanalytic-pro"
 REGION = "us-east1"
-CLUSTER_NAME = "my-demo-cluster"
+CLUSTER_NAME = "cluster-demo"
 COMPOSER_BUCKET = "us-central1-demo-instance-a649b781-bucket" ## change this 
 
 GCS_JOB_FILE_1 = f"gs://{COMPOSER_BUCKET}/data/INGESTION/hospitalA_mysqlToLanding.py"
