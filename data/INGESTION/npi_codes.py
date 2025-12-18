@@ -74,7 +74,7 @@ if response.status_code == 200:
         print(detailed_results)
         df = spark.createDataFrame(detailed_results)
 #         display(df)
-        df.write.format("parquet").mode("overwrite").save("gs://healthcare-bucket-22032025/landing/npi_extract/")
+        df.write.format("parquet").mode("overwrite").save("gs://dar-healthcare-bucket-20251128/landing/npi_extract/")
 
     else:
         print("No detailed results found.")
